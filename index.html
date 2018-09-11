@@ -18,13 +18,18 @@
 <body>
   <div id="app">
     <el-scrollbar wrap-class="list" tag="ul">
-      <li v-for="item in 0">{{item}}</li>
+      <li v-for="item in number">{{item}}</li>
     </el-scrollbar>
   </div>
 
   <script type="text/javascript">
     new Vue({
-      el: '#app'
+      el: '#app',
+      data () {
+        return {
+          number: 15
+        }
+      }
     })
   </script>
 </body>
